@@ -3,6 +3,7 @@ function handleClick(target) {
     
    const itemName = target.childNodes[3].childNodes[3].innerText;
    const li = document.createElement("li");
+
    li.innerText = itemName;
 
    const selectedContainer = document.getElementById('product-name');
@@ -55,13 +56,6 @@ function applyCouponCode(target) {
 }
 
 function goHome(target) {
-    
- document.getElementById("total-price").innerText = "00.00";
-  document.getElementById("discount").innerText = "00.00" ;
-  document.getElementById("total").innerText ="00.00 ";
-  document.getElementById("product-name").innerText ="Product Name";
-  document.getElementById("form").reset() ;
-  
-  
-      
+    window.location.reload();
+   
     }
